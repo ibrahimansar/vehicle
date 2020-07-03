@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from '../Bike/Bike.module.css';
+import classes from '../Bike/BikeControl.module.css';
 import Button from '../../UI/Button/Button';
 
 const Car = () => {
