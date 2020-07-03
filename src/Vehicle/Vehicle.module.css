@@ -1,0 +1,20 @@
+.veh {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px 50px;
+    height: 400px;
+}
+
+.head{
+    padding-top: 30px;
+    color: white;
+    font-size: 50px;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 5px;
+}
+
+.main{
+    background-color:  black;
+    opacity: 0.9;
+}

@@ -1,6 +1,7 @@
 import React from 'react';
-import Vehicle from './Vehicle/Vehicle';
+import Vehicle from './Vehicle/vehicle';
 import './App.css';
+
 
 function App() {
   return (
