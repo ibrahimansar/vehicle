@@ -1,16 +1,13 @@
 import React from 'react';
-import classes from './BikeControl.module.css';
+import classes from '../Bike/BikeControl.module.css';
 import Button from '../../UI/Button/Button';
-//import BikeList from './BikeList';
 
-
-const Bike = (props) => {
+const Car = () => {
     return(
-        <div className={classes.Bike}>
-            <Button btnType="Veh" onClick = {props.Listopen}> BIKE </Button>
-            <p>test</p>
+        <div className= {classes.Car}>
+            <Button btnType="Veh"> CAR </Button>
         </div>
     )
 }
 
-export default Bike;
+export default Car;
