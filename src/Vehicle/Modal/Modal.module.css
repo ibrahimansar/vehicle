@@ -1,0 +1,51 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  .modalmain {
+    position:fixed;
+    background: white;
+    width: 50%;
+    height: auto;
+    top:42%;
+    left:50%;
+    transform: translate(-50%,-50%);
+  }
+  
+  .displayblock {
+    display: block;
+  }
+  
+  .displaynone {
+    display: none;
+  }
+
+  .veh {
+    background-color: transparent;
+    color: silver;  
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+    width: 250px;
+    cursor: pointer;
+    border: 1px solid silver;
+    padding: 10px;
+    margin-right: 50px;
+    margin-left: 50px;
+    justify-content: center;
+}
+
+.veh:hover {  
+    box-shadow: #b2beb5 2px 0px 2px;   
+    border-radius: 5px;
+}
+
+.veh:first-of-type {
+    margin-left: 0;
+    padding-left: 0;
+}

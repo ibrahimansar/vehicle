@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import classes from './Vehicle.module.css';
-import Car from './Car/CarControl';
-import Bike from './Bike/BikeControl';
-import Suv from './Suv/SuvControl';
+import Car from './Car/Car';
+import Bike from './Bike/Bike';
+import Suv from './Suv/Suv';
 import Heading from '../Heading/Heading';
 import Aux from '../HOC/Auxiliary';
 
