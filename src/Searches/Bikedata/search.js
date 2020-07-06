@@ -43,7 +43,7 @@ class Search extends Component {
     return (
       <Aux>
       <div className={classes.wrapper} >
-         <input type="text" placeholder="Enter item to be searched" onChange={(e)=>this.searchSpace(e)} />
+         <input className={classes.input} type="text" placeholder="Enter item to be searched" onChange={(e)=>this.searchSpace(e)} />
       </div>
       <div>
         {items}
