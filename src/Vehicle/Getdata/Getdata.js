@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
-import classes from './Vehicle.module.css';
-import Car from './Car/Car';
-import Bike from './Bike/Bike';
-import Suv from './Suv/Suv';
-import Heading from '../Heading/Heading';
-import Aux from '../HOC/Auxiliary';
+import classes from '../Vehicle.module.css';
+import Car from './Car';
+import Bike from './Bike';
+import Suv from './Suv';
+import GetHeading from '../../UI/Heading/GetHeading';
+import Aux from '../../HOC/Auxiliary';
 
 
 class Vehicle extends Component {
@@ -13,7 +13,7 @@ class Vehicle extends Component {
             <Aux>
           <div className= {classes.main}>    
             <div className = {classes.head}>
-                    <Heading />
+                    <GetHeading />
                 </div>
             <div className =  {classes.veh}>
                 <Car />

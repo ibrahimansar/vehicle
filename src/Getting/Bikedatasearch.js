@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import axios from '../../axios-orders';
-import Aux from '../../HOC/Auxiliary';
-import classes from '../search.module.css';
+import axios from '../axios-orders';
+import Aux from '../HOC/Auxiliary';
+import classes from './search.module.css';
 
 class BikeDataSearch extends Component {
     state = {
@@ -15,7 +15,7 @@ class BikeDataSearch extends Component {
       }
     
     componentDidMount() {
-        axios.get('./user.json').then(response => {
+        axios.get('./bike.json').then(response => {
             console.log(response.data);
             const fetchedResults = [];
             for(let key in response.data){
@@ -33,7 +33,7 @@ class BikeDataSearch extends Component {
         const items = this.state.users.filter((user)=> {
             if(this.state.search == null)
               return user
-            else if(user.name.toLowerCase().includes(this.state.search.toLowerCase() || user.roll.toLowerCase().includes(this.state.search.toLowerCase()) )){
+            else if(user.name.toLowerCase().includes(this.state.search.toLowerCase() || user.modal.toLowerCase().includes(this.state.search.toLowerCase()) )){
                 return user
             }  
         }).map(user => {
@@ -42,7 +42,7 @@ class BikeDataSearch extends Component {
                     <ul>
                         <li>
             <span className= {classes.data}>{user.name}</span>
-            <span className= {classes.data}>{user.roll}</span>
+            <span className= {classes.data}>{user.modal}</span>
                         </li>
                     </ul>
                 </div>
@@ -52,7 +52,7 @@ class BikeDataSearch extends Component {
         return (
             <Aux>
                 <div className={classes.wrapper} >
-                    <input className={classes.input} type="text" placeholder="Enter item to be searched" onChange={(e)=>this.searchSpace(e)} />
+                    <input className={classes.input} type="text" placeholder="Enter Bike to be searched" onChange={(e)=>this.searchSpace(e)} />
                 </div>
                 <div>
                     {items}

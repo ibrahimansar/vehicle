@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Heading = () => {
+const GetHeading = () => {
     return(
         <div>
             <div>Vehicle Garage</div>
@@ -8,4 +8,4 @@ const Heading = () => {
     )
 }
 
-export default Heading;
+export default GetHeading;

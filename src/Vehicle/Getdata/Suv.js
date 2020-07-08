@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import Modal from '../Modal/Modal';
-import classes from '../Modal/Modal.module.css';
+import Modal from '../../UI/Modal/Modal';
+import classes from '../../UI/Modal/Modal.module.css';
+import Suvdatasearch from '../../Getting/Suvdatasearch';
 
 
 class Bike extends Component {
@@ -17,11 +18,10 @@ class Bike extends Component {
     render() {
       return (
         <main>
-          <h1>React Modal</h1>
           <Modal show={this.state.show} handleClose={this.hideModal}>
-            <p>Car List</p>
+            <Suvdatasearch />
           </Modal>
-          <button className={classes.veh} onClick={this.showModal}>Car</button>
+          <button className={classes.veh} onClick={this.showModal}>SUV</button>
         </main>
       );
     }
