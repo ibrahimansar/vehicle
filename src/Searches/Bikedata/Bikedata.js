@@ -1,66 +1,39 @@
-import react,{Component} from "react";
+import React, {Component} from 'react';
+import axios from '../../axios-orders';
 
-const Information = [
-  {
-    "name":"Samule",
-    "age":21,
-    "country":"USA"
-  },
-  {
-    "name":"Sam",
-    "age":21,
-    "country":"USA"
-  },
-  {
-    "name":"Mark",
-    "age":21,
-    "country":"Africa"
-  },
-  {
-    "name":"Markus",
-    "age":21,
-    "country":"Africa"
-  },
-  {
-    "name":"Aayush",
-    "age":21,
-    "country":"India"
-  },
-  {
-    "name":"Sean",
-    "age":21,
-    "country":"Ireland"
-  },
-  {
-    "name":"Eduardo",
-    "age":21,
-    "country":"France"
-  },
-  {
-    "name":"Dustin",
-    "age":21,
-    "country":"Spain"
-  },
-  {
-    "name":"Alexendra",
-    "age":21,
-    "country":"USA"
-  },
-  {
-    "name":"Lee",
-    "age":21,
-    "country":"China"
-  },
-  {
-    "name":"Jim",
-    "age":21,
-    "country":"Korea"
-  },
-  {
-    "name":"Ansari",
-    "age":21,
-    "country":"Korea"
+class Bikedata extends Component {
+  state = {
+    users: []
+  };
+  
+  componentDidMount() {
+    axios.get('/user.json').then (response => {
+      console.log(response.data);
+      const fetchedResults = [];
+      for(let key in response.data){
+        fetchedResults.push(
+          {
+            ...response.data[key],
+            id: key
+          }
+        )
+      }
+      this.setState({users: fetchedResults})
+    })
   }
-];
+  render() {
+    return (
+      <div>
+        {this.state.users.map((user) => {
+          <div>
+            <h1>{user.id}</h1>
+            <h1>{user.name}</h1>
+            <h1>{user.roll}</h1>
+          </div>
+        })}
+      </div>
+    )
+  }
+}
 
-export default Information;
+export default Bikedata;

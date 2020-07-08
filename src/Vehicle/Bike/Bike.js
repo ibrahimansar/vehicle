@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Modal from '../Modal/Modal';
 import classes from '../Modal/Modal.module.css';
-import Search from '../../Searches/Bikedata/search';
+import Bikedatasearch from '../../Searches/Bikedata/Bikedatasearch';
 
 class Bike extends Component {
     state = { show: false };
@@ -19,7 +19,8 @@ class Bike extends Component {
         <main>
           <h1>React Modal</h1>
           <Modal show={this.state.show} handleClose={this.hideModal}>
-            <Search />
+            <Bikedatasearch />
+            {/* <Search /> */}
           </Modal>
           <button className={classes.veh} onClick={this.showModal}>Bike</button>
         </main>
