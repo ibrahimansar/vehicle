@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import axios from '../axios-orders';
 import Aux from '../HOC/Auxiliary';
-import classes from './search.module.css';
+import classes from './Getting.module.css';
 
 class CarDataSearch extends Component {
     state = {

@@ -4,7 +4,7 @@ import classes from '../../UI/Modal/Modal.module.css';
 import Suvdatasearch from '../../Getting/Suvdatasearch';
 
 
-class Bike extends Component {
+class Suv extends Component {
     state = { show: false };
   
     showModal = () => {
@@ -27,4 +27,4 @@ class Bike extends Component {
     }
   }
   
-  export default Bike;
+  export default Suv;

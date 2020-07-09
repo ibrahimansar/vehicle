@@ -4,7 +4,7 @@ import classes from '../../UI/Modal/Modal.module.css';
 import Cardatasearch from '../../Getting/Cardatasearch';
 
 
-class Bike extends Component {
+class Car extends Component {
     state = { show: false };
   
     showModal = () => {
@@ -27,4 +27,4 @@ class Bike extends Component {
     }
   }
   
-  export default Bike;
+  export default Car;

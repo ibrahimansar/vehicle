@@ -7,7 +7,7 @@ import GetHeading from '../../UI/Heading/GetHeading';
 import Aux from '../../HOC/Auxiliary';
 
 
-class Vehicle extends Component {
+class Getdata extends Component {
     render(){
         return(
             <Aux>
@@ -26,4 +26,4 @@ class Vehicle extends Component {
     }
 }
 
-export default Vehicle;
+export default Getdata;

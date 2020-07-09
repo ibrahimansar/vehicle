@@ -1,0 +1,14 @@
+
+.input{
+    margin-top:10px;
+    font-size: 20px;
+    font-family: 'Poiret One', cursive;
+    border: 2px solid rgb(39, 18, 18);
+    border-radius: 5px;
+    padding: 6px;
+    outline: none;
+}
+
+.data{
+    padding-right: 10px;
+}

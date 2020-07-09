@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import axios from '../../axios-orders';
+import axios from '../axios-orders';
+import classes from './Putting.module.css';
 
 class PutsuvData extends Component {
     state = {
@@ -11,7 +12,7 @@ class PutsuvData extends Component {
     postDataHandler = () => {
         const info = {
             name: this.state.name,
-            modal: this.state.id,
+            modal: this.state.modal,
             power: this.state.power
         }
         axios.post('/suv.json', info)
@@ -23,7 +24,7 @@ class PutsuvData extends Component {
 render () {
     return (
         <div className={classes.NewPost}>
-            <h1>Add a Post</h1>
+            <h1>Add Suv Data</h1>
             <label>Name</label>
             <input type="text" value={this.state.name} onChange={( event ) => this.setState( { name: event.target.value } )} />
             <label>Modal</label>
