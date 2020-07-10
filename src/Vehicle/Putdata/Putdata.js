@@ -3,6 +3,7 @@ import classes from '../Vehicle.module.css';
 import Car from './Car';
 import Bike from './Bike';
 import Suv from './Suv';
+import Get from '../../UI/Heading/Navigation/Get';
 import PutHeading from '../../UI/Heading/PutHeading';
 import Aux from '../../HOC/Auxiliary';
 
@@ -19,6 +20,7 @@ class Getdata extends Component {
                 <Car />
                 <Bike />
                 <Suv />
+                <Get />
             </div>
           </div>    
             </Aux>
