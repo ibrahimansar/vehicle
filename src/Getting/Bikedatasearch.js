@@ -38,7 +38,7 @@ class BikeDataSearch extends Component {
             }  
         }).map(user => {
             return(
-                <div>
+                <div key = {user.id}>
                     <ul>
                         <li>
             <span className= {classes.data}>{user.name}</span>
